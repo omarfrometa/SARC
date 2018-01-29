@@ -1,0 +1,10 @@
+﻿{
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
+    "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
+  },
+  "version": "1.0.0-*"
+}

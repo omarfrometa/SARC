@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Infraestructure\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SARC.Data\SARC.Data.csproj" />
+    <ProjectReference Include="..\SARC.Models\SARC.Models.csproj" />
+    <ProjectReference Include="..\SARC.Repository\SARC.Repository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="AuthenticationService.cs" />
+    <Compile Remove="FormService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AuthenticationService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <None Include="FormService.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+  </ItemGroup>
+</Project>
